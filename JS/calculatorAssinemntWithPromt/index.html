@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <title>CalCulator</title>
+    </head>
+    <body>
+        <h1>CalCulator</h1>
+        <script>
+            var num=Number(prompt('Enter a First Number'))
+            var num2=Number(prompt('Enter a First Number'))
+            var char=prompt('Add + - * % / ');
+            console.log(typeof num);
+            if (char==="+") {
+              var total=num+num2;
+             document.write('<h1>');
+                document.write(total)
+                document.write("</h1>")
+            }else if(char==="-"){
+                var total=num-num2;
+                document.write('<h1>');
+                document.write(total)
+                document.write("</h1>")
+            }
+            else if(char==="*"){
+                var total=num*num2;
+                document.write('<h1>');
+                document.write(total);
+                document.write("</h1>")
+            }
+            else if(char==='%'){
+                var total=num%num2;
+                document.write('<h1>');
+                document.write(total);
+                document.write("</h1>")
+            }
+            else {
+                var total=num/num2;
+                document.write('<h1>');
+                document.write(total);
+                document.write("</h1>")
+            }
+        </script>
+    </body>
+</html>
