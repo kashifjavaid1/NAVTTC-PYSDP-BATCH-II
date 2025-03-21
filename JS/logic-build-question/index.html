@@ -4,6 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logic Building Session</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0%;
+            box-sizing: border-box;
+        }
+        #main{
+           width: 200px;
+           height: 150px;
+           background-color: beige;
+           border: 1px solid black;
+           margin: 10px;
+
+        }
+        button{
+            width: 140px;
+            height: 30px;
+            padding: 10px;
+           margin: 10px;
+
+        }
+    </style>
 </head>
 <body>
     <script>
@@ -46,19 +68,67 @@
         // }
 
         // Question No 4
-        var num1=Number(prompt('First Number'));
-        var num2=Number(prompt('Seconde Number'));
-        var num3=Number(prompt('Third Number'));
+        // var num1=Number(prompt('First Number'));
+        // var num2=Number(prompt('Seconde Number'));
+        // var num3=Number(prompt('Third Number'));
         
-        if (num1>=num2 && num1>=num3) {
-            document.write('num1 is grater Numer',num1);
+        // if (num1>=num2 && num1>=num3) {
+        //     document.write('num1 is grater Numer',num1);
+        // }
+        // else if(num2>num1 && num2>=num3){
+        //     document.write('Num2 is greater Numer',num2)
+        // }
+        // else{
+        //     document.write("Num3 is Greater Numer",num3)
+        // }
+
+        // 
+        // for(let i=0; i<=30; i++){
+        //     document.write('<div id=main>')
+        //         document.write('<p>')
+        //             document.write("Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.")
+        //         document.write('</p>')
+        //         document.write('<button>')
+        //             document.write('click me')
+        //             document.write('</button>')
+        //         document.write('</div>')
+        // }
+
+
+        // question number 5
+        // function calculateGrade(){
+        //     let marks=Number(prompt('Enter a Total marks'));
+        //     if (marks>=90 && marks<=100) {
+        //         document.write('A');
+        //     }
+        //     else if(marks>=80 && marks<=89){
+        //         document.write('B')
+        //     }
+        //     else if(marks>=70 && marks<=79){
+        //         document.write('C');
+        //     }
+        //     else if(marks>=60 && marks<=69){
+        //         document.write('D');
+        //     }
+        //     else {
+        //         document.write('F');
+        //     }
+        // }
+        // calculateGrade();
+
+        // question No 6
+        let arr=new Array(3)
+        function findMax(){
+         for(let i=0; i<3; i++){
+            arr[i]=Number(prompt('Enter a numbers'))
+         }
+         for(let j=0; j<3; j++){
+            if (arr>j) {
+                document.write(arr[j])
+            }
+         }
         }
-        else if(num2>num1 && num2>=num3){
-            document.write('Num2 is greater Numer',num2)
-        }
-        else{
-            document.write("Num3 is Greater Numer",num3)
-        }
+        findMax()
     </script>
 </body>
 </html>
