@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>Event Methode</title>
+    </head>
+    <style>
+        .five{
+            background-color: red;
+        }
+        .seven{
+            background-color: blueviolet;
+        }
+        div{
+            height: 200px;
+            width: 200px;
+            background-color: aqua;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin: 20px;
+        }
+    </style>
+      <!-- // function f1(){
+        //     alert()
+        // }
+//  let head=document.getElementById('head');
+//  head.addEventListener('click',()=>{
+//     // head.classList.add('seven')
+//     // head.classList.remove('five')
+//     head.classList.toggle ('five')
+//  }) -->
+    <body>
+        <!-- <h1 id="head" class="five">Hello</h1> -->
+        <!-- <button onclick="f1()">Click</button> -->
+        <!-- <button oncontextmenu="f1()">Click</button> -->
+        <!-- <button ondblclick="f1()">Click</button> -->
+        <!-- <button onmouseenter="f1()">Click</button> -->
+        <!-- <button onmouseout="f1()">Click</button> -->
+        <!-- <button >Click</button> -->
+        <div id="parent">
+            <button id="btn">click</button>
+        </div>
+        <script>
+         let parent=document.getElementById("parent");
+let btn=document.getElementById('btn');
+parent.addEventListener('click',()=>{
+    parent.classList.toggle('five');
+})
+btn.addEventListener('click',()=>{
+            btn.classList.toggle('seven')
+         })
+        </script>
+        
+    </body>
+</html>

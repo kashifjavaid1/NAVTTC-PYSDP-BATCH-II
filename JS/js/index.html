@@ -1,0 +1,56 @@
+<html>
+    <head>
+        <title>Javascrip DOM</title>
+        <style>
+            #heading{
+                background-color: aquamarine;
+            }
+            .seven{
+                background-color: bisque;
+            }
+        </style>
+    </head>
+    <!-- // DOM document object model
+// tags, text,attributes
+
+// Getter -->
+    <body>
+        <!-- <div id="head">
+            <ul>
+                <li>List 1</li>
+                <li>List 2</li>
+            </ul>
+            <h1>Hello</h1>
+        </div> -->
+        <!-- <h1 id="head" style="background-color: aqua;">Hello</h1> -->
+         <h2 id="heading" class="five">kashif</h2>
+        <script>
+            // ========================================================================================
+            // getter methode
+
+// let head=document.getElementById('head').innerText;
+// console.log(head);
+    
+// let head=document.getElementById('head').innerHTML;
+// console.log(head);
+
+
+// let head=document.getElementById('head').getAttribute('style')
+// console.log(head);
+
+// let head=document.getElementById('head').getAttributeNode('style')
+// console.log(head);
+
+// let head=document.getElementById('head').attributes;
+// console.log(head);
+
+
+//  ==========================================================================================================
+// setter
+// document.getElementById('head').innerText="Kashif"
+// document.getElementById('heading').innerText="Hello";
+// document.getElementById('heading').innerHTML="<h1>kashif</h1>"
+document.getElementById('heading').setAttribute("class",'seven');
+        </script>
+    </body>
+</html>
