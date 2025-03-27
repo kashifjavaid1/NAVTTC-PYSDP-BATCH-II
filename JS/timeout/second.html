@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            width: 150px;
+            height: 150px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    
+    <!-- <div class="div1"></div> -->
+    <h1 class="h1"></h1>
+    <button class="btn">stop</button>
+    <script>
+        // let div1=document.querySelector('.div1');
+        let h1=document.querySelector('.h1');
+        let btn=document.querySelector('.btn');
+        let count=0
+      let a=setInterval(()=>{
+     h1.innerHTML=count++
+        },1000);
+// btn.addEventListener('click'()=>{
+//     clearInterval(a)
+// })
+// let m=0;
+// let a=setInterval(()=>{
+//     m=m+10;
+//     div1.style.marginLeft=m+'px';
+// },1000);
+
+
+    </script>
+</body>
+</html>
+

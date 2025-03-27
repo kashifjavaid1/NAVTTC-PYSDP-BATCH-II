@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1{
+            width: 150px;
+            height: 150px;
+           background-color: red;  
+        }
+    </style>
+</head>
+<body>
+    <div class="div1"></div>
+    <button id="stop">stop</button>
+    <script>
+       let div1=document.querySelector('.div1');
+       let stop=document.querySelector('#stop');
+      let a= setTimeout(()=>{
+        div1.style.width="500px"
+        div1.style.height="500px"
+          div1.innerText="div1"
+       },3000);
+       stop.addEventListener("click",()=>{
+         clearTimeout(a)
+       })
+    </script>
+</body>
+</html>
