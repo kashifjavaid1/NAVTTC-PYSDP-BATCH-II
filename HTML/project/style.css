@@ -1,0 +1,92 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: white;
+    flex-wrap: wrap;
+}
+.logo{
+   margin-top: 10px;
+   margin-left: 10px;
+   height:2.5rem;
+   width: 7rem;
+}
+.second{
+    display: flex;
+    flex-direction: column;
+   margin-left: 20px;
+}
+.location{
+ display: flex;
+ align-items: center;
+ font-weight: bold;
+}
+.country{
+    margin-left: 5px;
+}
+
+.search-box{
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    outline: none;
+    height: 2.4rem;
+    border: none;
+}
+.select{
+    text-align: center;
+    width: 3.3rem;
+    outline: none;
+    border: none;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius:5px ;
+    background-color: #d4d4d4;
+    
+}
+.select:focus{
+    outline: 2px solid #f3a847;
+}
+
+.input{
+    width: 100%;
+    outline: none;
+    border: none;
+    border-left: 1px solid;
+    padding-left: 10px;
+}
+.input::placeholder{
+    font-size: 15px;
+    font-weight: 500;
+}
+.search-btn{
+    width: 4rem;
+    font-size: 1.3rem;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    outline: none;
+    border: none;
+    background-color:#f3a847;
+}
+.signIn{
+    font-size: 0.9rem;
+}
+.count{
+    margin-left: 1rem;
+}
+
+@media screen and (max-width:576px) {
+    .search-box {
+        display: none;
+    }
+    .container{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
