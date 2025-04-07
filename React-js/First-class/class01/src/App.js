@@ -1,0 +1,12 @@
+import './App.css';
+
+function App() {
+  return (
+    <div className="App">
+      {/* Hooks and Props*/}
+      <h1>React App</h1>
+    </div>
+  );
+}
+
+export default App;
