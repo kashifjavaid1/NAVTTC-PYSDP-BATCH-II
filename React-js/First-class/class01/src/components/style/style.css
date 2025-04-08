@@ -1,0 +1,152 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
+.container{
+background-color: black;
+color: white;
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: space-evenly;
+flex-wrap: wrap;
+}
+.logo{
+    display: flex;
+    align-items: center;
+   margin-top: 5px;
+}
+
+.location{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   gap: 5px;
+  margin-left: 3px;
+}
+.icon{
+    color: white;
+}
+.search-box{
+    width: 60%;
+    display: flex;
+}
+.select-option{
+    height: 40px;
+    width: 60px;
+    outline: none;
+    text-align: center;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #d4d4d4;
+    border: none;
+    border-right: 1px solid;
+}
+.borderhover:hover{
+    border: 2px solid white;
+    padding: 4px;
+}
+input{
+    width:100% ;
+    outline: none;
+    border: none;
+    padding-left: 10px;
+}
+input::placeholder{
+    font-size: 1rem;
+    font-weight: lighter;
+}
+.btn{
+    width: 60px;
+    outline: none;
+    border: none;
+    border-bottom-right-radius: 5px;
+     border-top-right-radius: 5px;
+     background-color: #f3a847;
+     font-size: 1.4rem;
+}
+.accountSession{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.accountheading{
+    font-size: 14px;
+}
+.sigin{
+    font-size: 12px;
+    font-weight: bold;
+}
+.shopping{
+    display: flex;
+    align-items: center;
+}
+.cart-des{
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.hero-container{
+    background-color: #232f3e;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.menu{
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 10px;
+      
+}
+.menubar{
+    font-size: 1.2rem;
+}
+.menu-para{
+    margin-left: 6px;
+}
+.hero-detail{
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 15px;
+    margin-left: 10px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.hero-img{
+    width: 100%;
+}
+@media screen and (min-width:150px) and (max-width:576px){
+    .search-box{
+        display: none;
+    }
+    .container{
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+        padding-top: 10px;
+    }
+}
+.odersession{
+    display: block;
+}
+@media screen and (min-width:577px) and (max-width:840px){
+    .accountSession{
+        display: none;
+    }
+    .odersession{
+        display: none;
+    }
+    .shopping{
+        display: none;
+    }
+}
+
+@media screen and (min-width:841px) and (max-width:1300px){
+    .container{
+        height: 100px;
+    }
+}
