@@ -1,16 +1,16 @@
 import React from "react";
-import './style/style.css'
+import './style/style.css';
 import logo from '../assets/images/amazon-logo-transparent.png'
 function Navbar(){
     return (
    <>
     <div className="container">
         {/* logo */}
-      <div className="logo borderhover">
+      <div className="logo ">
 <img src={logo} alt="Logo" width={150} height={40}/>
       </div>
       {/* Location part */}
-      <div className="session1 borderhover">
+      <div className="session1">
       <p style={{marginLeft:'20px', fontSize:'12px'}}>Delivery to</p>
       <div className="location">
       <i class="fa-solid fa-location-dot icon" ></i>

@@ -119,6 +119,41 @@ input::placeholder{
 .hero-img{
     width: 100%;
 }
+.cart{
+  background-color: white;
+  box-shadow: 1px 2px 3px 0px rgba(0,0,0,0.10);
+   height: 420px;
+   width: 350px; 
+}
+.main-containerCart{
+    display: flex;
+    width: 100%;
+     flex-wrap: wrap;
+     padding: 0 4%;
+    
+}
+.cart-cintainer{
+   width: 25%;
+   min-width: 300px;
+ }
+.logoImage{
+    width: 350px;
+    height: 330px;
+    padding: 15px;
+   
+}
+.cart-heading{
+    font-size: 20px;
+    padding-left: 15px;
+    margin-top: 10px;
+}
+.cart-description{
+    padding-left: 14px;
+    color: rgb(72, 148, 199);
+    font-weight: 600;
+}
+
+
 @media screen and (min-width:150px) and (max-width:576px){
     .search-box{
         display: none;
