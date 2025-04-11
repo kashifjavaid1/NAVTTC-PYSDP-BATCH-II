@@ -1,19 +1,16 @@
 import './App.css';
-import { useEffect, useState } from 'react';
-// usestate and useEffect
+import FormMemo from './FormMemo';
+import MemoHook from './MemoHook';
 function App() {
-const [show,setShow]=useState(false)
-const onhandle=()=>{
- setShow(!show)
-}
-useEffect(()=>{
-  console.log("render the useEffect");
-  
-},[show])
   return (
     <div className="App">
+
+    <h2>React js</h2>
     
-     <button onClick={onhandle}>{show?'hide':'show'}</button>
+     {/* <Effect/> */}
+     <MemoHook/>
+     <br />
+     <FormMemo/>
     </div>
   );
 }
