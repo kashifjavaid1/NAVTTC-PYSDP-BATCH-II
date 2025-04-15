@@ -10,3 +10,36 @@
   color:rgb(0, 17, 255);
   margin: 10px;
 } */
+
+.focus{
+  background-color: red;
+}
+
+.numInput{
+  width: 200px;
+  height: 30px;
+  border:1px solid;
+  outline: none;
+}
+
+.div{
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+}
+input{
+  width: 200px;
+  height: 25px;
+  margin: 5px;
+}
+button{
+  width: 100px;
+  margin: 10px;
+  height: 25px;
+}
+.changeText{
+  color: red;
+}
+.changeNumber{
+  color: purple;
+}
