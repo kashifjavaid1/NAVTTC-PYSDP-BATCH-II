@@ -1,5 +1,6 @@
 import { useState } from "react"
 import ToggleShow from "./component/ToggleShow"
+import Showpassword from "./component/Showpassword"
 
 function App() {
   const [show,setShow]=useState(true)
@@ -16,6 +17,7 @@ function App() {
      <button onClick={()=>setShow(!show)}>show password</button> */}
      <button onClick={()=>setShow(!show)}>Show Toggle</button>
      {show?<ToggleShow/>:null}
+     <Showpassword/>
     </>
   )
 }
