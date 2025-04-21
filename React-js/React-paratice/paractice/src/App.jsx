@@ -3,6 +3,7 @@ import ToggleShow from "./component/ToggleShow"
 import Showpassword from "./component/Showpassword"
 import User from "./component/User"
 import Wrapper from "./component/Wrapper";
+import Parent from "./component/Parent";
 
 function App() {
 const [show,setShow]=useState(true);
@@ -29,7 +30,7 @@ const userInfo = ["kashif", "kashif@gmail.com", 39];
      {/* {show?<ToggleShow/>:null}
      <Showpassword/> */}
      {/* <User/> */}
-     <Wrapper color="pink" border="2px dotted pink">
+     {/* <Wrapper color="pink" border="2px dotted pink">
      <h1>Hello EveryOne 1</h1>
      </Wrapper>  
      <Wrapper>
@@ -43,7 +44,8 @@ const userInfo = ["kashif", "kashif@gmail.com", 39];
      </Wrapper>
      <Wrapper>
      <h1>Hello EveryOne 5</h1>
-     </Wrapper>
+     </Wrapper> */}
+     <Parent/>
     </>
   )
 }
