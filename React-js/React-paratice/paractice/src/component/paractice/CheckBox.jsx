@@ -3,6 +3,7 @@ import React, { useState } from 'react';
 const CheckBox = () => {
     const [skills,setSkills]=useState([])
 
+    // skills check and unchecked
     const skillFun=(event)=>{
 if (event.target.checked) {
     setSkills([...skills,event.target.value])
