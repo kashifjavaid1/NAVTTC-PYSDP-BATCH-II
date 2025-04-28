@@ -6,8 +6,8 @@ import Wrapper from "./component/Wrapper";
 import Parent from "./component/Parent";
 
 function App() {
-const [show,setShow]=useState(true);
-  const [name,setName]=useState("kashif")
+// const [show,setShow]=useState(true);
+  // const [name,setName]=useState("kashif")
 // const fun=(num1,num2,total)=>{
 //   total=num1+num2;
 //   alert(total)
@@ -18,7 +18,7 @@ const [show,setShow]=useState(true);
 //   age:30
 // }
 
-const userInfo = ["kashif", "kashif@gmail.com", 39];
+// const userInfo = ["kashif", "kashif@gmail.com", 39];
 
   return (
     <>
@@ -26,7 +26,7 @@ const userInfo = ["kashif", "kashif@gmail.com", 39];
 
      {/* <input type={show?"text":'password'} />
      <button onClick={()=>setShow(!show)}>show password</button> */}
-     <button onClick={()=>setShow(!show)}>Show Toggle</button>
+     {/* <button onClick={()=>setShow(!show)}>Show Toggle</button> */}
      {/* {show?<ToggleShow/>:null}
      <Showpassword/> */}
      {/* <User/> */}
