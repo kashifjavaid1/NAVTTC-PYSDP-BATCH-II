@@ -1,4 +1,5 @@
 import Effect from "./components/hooksparactice/effect"
+import Parent from "./parent"
 
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
     <>
     <div>
       <h1>APP JS</h1>
-      <Effect/>
+      {/* <Effect/> */}
+      <Parent/>
     </div>
     </>
   )
