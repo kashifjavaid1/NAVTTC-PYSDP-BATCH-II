@@ -4,29 +4,34 @@ const SignUp = () => {
     const [fullName,setName]=useState("");
     const [email,setEmail]=useState("");
     const [password,setPassword]=useState("");
-    const signFun= async()=>{
-    console.log(name);
+   const signFun = async () => {
+    console.log(fullName);
     console.log(email);
     console.log(password);
-    let result=await fetch("http://localhost:5000/sign",{
-         method:'POST',
-        body:JSON.stringify({
+
+    let result = await fetch("http://localhost:5000/sign", {
+        method: 'POST',
+        body: JSON.stringify({
             fullName,
             email,
             password
-        },
-
-        
-    ),
-    headers: {
-        'Content-Type': 'application/json'
-      },
-       
+        }),
+        headers: {
+            'Content-Type': 'application/json'
+        }
     });
-    result=await result.json();
+
+    result = await result.json();
     console.log(result);
-    
+    if (result && result.token) {
+        localStorage.setItem("user", JSON.stringify(result));
+        alert("Signup successful!");
+       
+    } else {
+        alert("Signup failed");
     }
+};
+
     return (
         <div>
            <div className='form-container'>

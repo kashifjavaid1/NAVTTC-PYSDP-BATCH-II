@@ -59,9 +59,9 @@ const Parent = () => {
          <h1>Loop</h1>
          
     
-        {user.map(user => (
+        {/* {user.map(user => (
           <Loop key={user.id} user={user} />
-        ))}
+        ))} */}
     
 
         </div>

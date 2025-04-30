@@ -46,6 +46,7 @@ function App() {
      <h1>Hello EveryOne 5</h1>
      </Wrapper> */}
      <Parent/>
+     <ToggleShow/>
     </>
   )
 }
