@@ -1,4 +1,5 @@
 import Effect from "./components/hooksparactice/effect"
+import Dyanmic from "./components/styleing/dyanmic"
 import Parent from "./parent"
 
 
@@ -9,7 +10,8 @@ function App() {
     <div>
       <h1>APP JS</h1>
       {/* <Effect/> */}
-      <Parent/>
+      {/* <Parent/> */}
+      <Dyanmic/>
     </div>
     </>
   )
