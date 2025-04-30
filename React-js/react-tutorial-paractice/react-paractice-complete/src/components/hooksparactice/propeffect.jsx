@@ -5,18 +5,32 @@ const Propeffect = ({counter,increse}) => {
         console.log("state funcation is call");
         
     }
-  const dataFun=()=>{
-    console.log("data fun is called");
+//   const dataFun=()=>{
+//     console.log("data fun is called");
     
-  }
-  
-    useEffect(()=>{
-        dataFun();
-    },[])
-    useEffect(()=>{
-        stateFun();
+//   }
+   // useEffect(()=>{
+    //     stateFun();
 
+    // },[counter])
+    // useEffect(()=>{
+    //     dataFun();
+    // },[])
+    useEffect(()=>{
+        console.log("component monunted");
+        
+    })
+    useEffect(()=>{
+   
+       console.log("component update monunted");
+       
     },[counter])
+    useEffect(()=>{
+        return ()=>{
+            console.log("unamount component");
+            
+        }
+    },[])
     return (
         <div>
          <h1>counter:{counter}</h1>    
