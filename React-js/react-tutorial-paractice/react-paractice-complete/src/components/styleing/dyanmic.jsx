@@ -1,23 +1,27 @@
 import React, { useState } from 'react';
 
 const Dyanmic = () => {
-    const [changeColor, setChangeColor] = useState({ backgroundColor: "red" });
+    const [changeTheme,setChangeTheme]=useState({
+        padding:"20px",
+          width:"250px",
+          border:"1px solid",
+          margin:"10px",
+          borderRadius:"10px",
+    })
+    const [white,setWhite]=useState()
 
-    const cardStyle={
-        width:"300px", 
-        padding:"10px",
-        borderRadius:"10px",
-        border:"1px solid black",
-        margin:"10px",
-        ...changeColor
-    }
-    const changeTheme=(background)=>{
-     setChangeColor({backgroundColor:background})
+    const changeThemestyle=(bgColor,textColor)=>{
+        console.log(bgColor);
+     
+           
+       setChangeTheme({...changeTheme,backgroundColor:bgColor,color:textColor})
+    
     }
     return (
         <div>
-            <button onClick={()=>changeTheme("green")}>changecolor</button>
-            <div style={cardStyle}>
+            <button onClick={()=>changeThemestyle("black","white")}>changecolor</button>
+            <button onClick={()=>changeThemestyle("white","black")}>changecolor</button>
+            <div style={changeTheme}>
                 <h1>card</h1>
                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veritatis placeat tempora soluta sit eligendi commodi.</p>
                 <p>See more</p>
