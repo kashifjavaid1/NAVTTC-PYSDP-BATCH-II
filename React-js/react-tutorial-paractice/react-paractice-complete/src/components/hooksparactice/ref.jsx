@@ -10,9 +10,12 @@ inputRef.current.placeholder="Please Enter a Name"
 inputRef.current.style.border="2px solid green"
 inputRef.current.style.borderRadius="5px"
 inputRef.current.style.outline="none"
+inputRef.current.value
     }
     const hideInput=()=>{
         inputRef.current.style.display="none"
+        console.log(inputRef.current.value);
+        
     }
     return (
         <div>

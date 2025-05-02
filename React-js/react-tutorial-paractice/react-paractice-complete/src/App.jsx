@@ -1,4 +1,5 @@
 import Effect from "./components/hooksparactice/effect"
+import ForwardRef from "./components/hooksparactice/forwardRef"
 import Ref from "./components/hooksparactice/ref"
 import Dyanmic from "./components/styleing/dyanmic"
 import Parent from "./parent"
@@ -13,7 +14,8 @@ function App() {
       {/* <Effect/> */}
       {/* <Parent/> */}
       {/* <Dyanmic/> */}
-      <Ref/>
+      {/* <Ref/> */}
+      <ForwardRef/>
     </div>
     </>
   )
