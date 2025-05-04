@@ -3,6 +3,7 @@ import Effect from "./components/hooksparactice/effect"
 import FormStatus from "./components/hooksparactice/formStatus"
 import ForwardRef from "./components/hooksparactice/forwardRef"
 import Ref from "./components/hooksparactice/ref"
+import ObjectChange from "./components/ObjectChange"
 import Dyanmic from "./components/styleing/dyanmic"
 import Parent from "./parent"
 
@@ -19,7 +20,8 @@ function App() {
       {/* <Ref/> */}
       {/* <ForwardRef/> */}
       {/* <FormStatus/> */}
-      <DriveState/>
+      {/* <DriveState/> */}
+      <ObjectChange/>
     </div>
     </>
   )
