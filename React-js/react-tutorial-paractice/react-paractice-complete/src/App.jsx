@@ -1,3 +1,4 @@
+import ArrayChange from "./components/ArrayChange"
 import DriveState from "./components/DriveState"
 import Effect from "./components/hooksparactice/effect"
 import FormStatus from "./components/hooksparactice/formStatus"
@@ -21,7 +22,8 @@ function App() {
       {/* <ForwardRef/> */}
       {/* <FormStatus/> */}
       {/* <DriveState/> */}
-      <ObjectChange/>
+      {/* <ObjectChange/> */}
+      <ArrayChange/>
     </div>
     </>
   )
