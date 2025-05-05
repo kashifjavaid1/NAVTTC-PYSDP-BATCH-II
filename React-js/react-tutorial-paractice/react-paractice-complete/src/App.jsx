@@ -6,6 +6,7 @@ import ForwardRef from "./components/hooksparactice/forwardRef"
 import Ref from "./components/hooksparactice/ref"
 import ObjectChange from "./components/ObjectChange"
 import Dyanmic from "./components/styleing/dyanmic"
+import Toggle from "./components/Toggle"
 import Parent from "./parent"
 
 
@@ -23,7 +24,8 @@ function App() {
       {/* <FormStatus/> */}
       {/* <DriveState/> */}
       {/* <ObjectChange/> */}
-      <ArrayChange/>
+      {/* <ArrayChange/> */}
+      <Toggle/>
     </div>
     </>
   )
