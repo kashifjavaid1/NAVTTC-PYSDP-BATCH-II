@@ -1,0 +1,93 @@
+what is use of useEffect hook
+use effect with state and props
+
+// Answers 1) remove side effect after button clicks,use data fetch,use life cycle methode,use dom manipulation
+
+    state side effect solve
+import React, { useEffect } from 'react';
+import { useState } from 'react';
+
+const Effect = () => {
+    // handle the extra rendering of component on state
+    const [counter,setCounter]=useState(0)
+    const [data,setData]=useState(0)
+    const fun=()=>{
+        let a=10;
+        let b=20;
+        let result=a+b;
+        console.log("value",result);
+        
+    }
+    
+    function abc() {
+        console.log("funcation is called");
+        
+    }
+   
+    useEffect(()=>{
+        abc() 
+    },[data])
+    return (
+        <div>
+            <button onClick={()=>setCounter(counter+1)}>counter{counter}</button>
+            <button onClick={()=>setData(data+1)}>Data{data}</button>
+        </div>
+    );
+}
+
+export default Effect;
+
+
+                       // props side effect solve
+import React, { useState } from 'react';
+import Propeffect from './components/hooksparactice/propeffect';
+
+const Parent = () => {
+    // use effect side effect handle with props
+  const [counter,setCounter]=useState(0);
+  const [data,setData]=useState(0)
+    return (
+        <div>
+            <Propeffect counter={counter} increse={data}/>
+           <button onClick={()=>setCounter(counter+1)}>counter</button>
+           <button onClick={()=>setData(data+1)}>data</button>
+        </div>
+    );
+}
+
+export default Parent;
+
+import React, { useEffect } from 'react';
+
+const Propeffect = ({counter,increse}) => {
+    const stateFun=()=>{
+        console.log("state funcation is call");
+        
+    }
+  const dataFun=()=>{
+    console.log("data fun is called");
+    
+  }
+  
+    useEffect(()=>{
+        dataFun();
+    },[])
+    useEffect(()=>{
+        stateFun();
+
+    },[counter])
+    return (
+        <div>
+         <h1>counter:{counter}</h1>    
+         <h1>Data:{increse}</h1>    
+        </div>
+    );
+}
+
+export default Propeffect;
+
+
+
+                                // human life Cycle effect solve with useeffect
+
+     

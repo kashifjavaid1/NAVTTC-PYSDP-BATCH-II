@@ -29,10 +29,15 @@ app.get("/getproduct",async(req,res)=>{
 
 })
 
-app.delete("/product/:id",async(req,res)=>{
-    
+app.get("/getproduct:id",async(req,res)=>{
+    const productId = req.params.id;
+    const product = await Product.findOne({ _id: productId });
+
+    if (!product) {
+      return res.status(404).json({ message: "Product not found" });
+    }
 })
 
 
 
-app.listen(5000)
+app.listen(5000);
