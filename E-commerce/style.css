@@ -100,3 +100,18 @@ button {
   margin-top: 2rem;
   
 }
+.remove{
+    width: 100%;
+    text-align: end;
+    padding-top: 30px;
+    padding-right: 1.2rem;
+    font-size: 2rem;
+    
+}
+#addto-card-heading{
+   display: flex;
+   justify-content: center;
+   /* margin-top: 5rem; */
+   font-size: 2rem;
+   font-weight: 700;
+}
