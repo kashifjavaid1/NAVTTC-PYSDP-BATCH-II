@@ -31,7 +31,7 @@
 
 
   .card-box {
-    width:30%;
+    width:25%;
     height:100vh;
     background-color: white;
     cursor: pointer;
@@ -54,6 +54,7 @@ right: 0px;
 .card-container{
     max-width: 250px;
     height: auto; 
+    
   
 }
 .card-container:hover{
@@ -114,4 +115,21 @@ button {
    /* margin-top: 5rem; */
    font-size: 2rem;
    font-weight: 700;
+}
+#addImg{
+    width: 100px;
+}
+.add-container{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.icondel{
+    margin-top: 35px;
+    color: red;
+}
+.card-con {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
