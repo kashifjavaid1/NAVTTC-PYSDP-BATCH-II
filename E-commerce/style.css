@@ -26,13 +26,14 @@
 
 #shopping-bag{
     font-size:2rem;
+    cursor: pointer;
 }
 
 
 
   .card-box {
     width:25%;
-    height:100vh;
+   min-height: 100vh;
     background-color: white;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -119,17 +120,30 @@ button {
 #addImg{
     width: 100px;
 }
-.add-container{
-    display: flex;
-    justify-content: space-around;
-    
+.add-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 10px;
 }
-.icondel{
-    margin-top: 35px;
-    color: red;
-}
-.card-con {
+
+.product-details {
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 5px;
+}
+
+#addImg {
+  width: 80px;
+  height: auto;
+}
+
+.icondel {
+  color: red;
+  cursor: pointer;
+}
+
+.card-con {
+  width: 100%;
 }
