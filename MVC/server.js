@@ -5,7 +5,7 @@ import userRoute from "./model/userRoute.js";
 const app=express();
 app.use(bodyParser.json());
 
-const port = 5000;
+  const port = 5000;
 const mongoURI = "mongodb://127.0.0.1:27017/users";
 
 mongoose.connect(mongoURI).then(()=>{
