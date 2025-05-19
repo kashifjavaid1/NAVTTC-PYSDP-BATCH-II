@@ -1,0 +1,20 @@
+  
+         
+         Data Types and ECMA standards
+
+  "use strict"  // treat all js code as newer version
+
+             typeof // check the type
+
+    
+   // conversionOperation
+   
+// "33" => 33
+// "33abc" => NaN
+//  true => 1; false => 0
+
+ 1 => true; 0 => false
+ "" => false
+ "hitesh" => true   
+
+  
