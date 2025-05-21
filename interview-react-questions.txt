@@ -90,4 +90,7 @@ export default Propeffect;
 
                                 // human life Cycle effect solve with useeffect
 
+// Google auth
+npm i oauth google
+
      
