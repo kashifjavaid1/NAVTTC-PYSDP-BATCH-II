@@ -1,8 +1,7 @@
 import express from "express"
-import { courseCreate, updateCourse } from "../controllers/course.controller.js";
+import { courseCreate, deleteCourse, updateCourse } from "../controllers/course.controller.js";
 const router=express.Router();
-router.post("/create",courseCreate);
-router.patch("/update/:courseId",updateCourse
-
-);
+router.post("/createCourse",courseCreate);
+router.patch("/update/:courseId",updateCourse);
+router.delete("/delete/:courseId",deleteCourse);
 export default router;

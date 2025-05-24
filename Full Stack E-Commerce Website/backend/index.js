@@ -22,17 +22,13 @@ try {
   
 }
 // Configuration cloudinary
-// cloudinary.config({ 
-//   cloud_name:process.env.CLOUD_NAME, 
-//   api_key:process.env.API_KEY, 
-//   api_secret:process.env.API_SECRET
-// });
-
 cloudinary.config({ 
-        cloud_name: 'dk48g8htz', 
-        api_key: '777828417773792', 
-        api_secret: 'I2aTM5wGR8DIePi_gniiH0NU17A' // Click 'View API Keys' above to copy your API secret
-    });
+  cloud_name:process.env.CLOUD_NAME, 
+  api_key:process.env.API_KEY, 
+  api_secret:process.env.API_SECRET
+});
+
+
 // File Handling middleware code
 app.use(fileUpload({
   useTempFiles : true,

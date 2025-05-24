@@ -32,6 +32,9 @@ export const courseCreate=async(req,res)=>{
     res.status(201).json({ message: "Course created successfully",courseCreate });
 }
 
+
+//  Update Course and image
+
 export const updateCourse = async (req, res) => {
   try {
     const { courseId } = req.params;
@@ -51,13 +54,29 @@ course.image = {
   public_id: uploadResult.public_id,
   url: uploadResult.secure_url
 };
-
       }
        await course.save();
-
-    res.status(200).json({ message: "Course updated successfully", course });
+       res.status(200).json({ message: "Course updated successfully", course });
   } catch (error) {
     console.error(error);
     res.status(500).json({ message: "Error in updating course", error: error.message });
   }
 };
+
+// delete Course
+export const deleteCourse=async(req,res)=>{
+try {
+  const {courseId}=req.params;
+ const course=await Course.findById(courseId);
+ if (!course) {
+   res.status(400).json({messgae:"course not found"})
+ }
+ if (course.image && course.image.public_id) {
+      await cloudinary.uploader.destroy(course.image.public_id);
+    }
+   await Course.findByIdAndDelete(courseId);
+  res.status(200).json({message:"course successfully deleted"})
+} catch (error) {
+  res.status(500).json({message:"course not deleted"})
+}
+}
